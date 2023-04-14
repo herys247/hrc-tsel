@@ -3564,6 +3564,13 @@ body.error-page .display-1 {
   font-size: 10em;
 }
 
+.login-background {
+  background-image: url('../media/image/bg-login.jpg');
+  background-size: cover !important;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
 .error-page {
   text-align: center;
   height: calc(100vh - 120px);
@@ -7596,7 +7603,7 @@ body.form-membership .form-wrapper {
   padding: 3rem;
   border-radius: 0.5rem;
   width: 430px;
-  margin: 50px auto;
+  margin: 50px 5% 50px 60%;
   text-align: center;
 }
 
@@ -7606,6 +7613,10 @@ body.form-membership .form-wrapper #logo {
 
 body.form-membership .form-wrapper #logo img:not(.logo) {
   display: none;
+}
+
+.logo {
+  width: 100%;
 }
 
 body.form-membership .form-wrapper h5 {
