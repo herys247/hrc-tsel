@@ -3348,7 +3348,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
-* {
+* {      
   min-width: 0;
   min-height: 0;
 }
@@ -4077,7 +4077,7 @@ textarea {
 .card .card-body,
 .app-block .app-content .app-action .card-body,
 .chat-block .card-body {
-  padding: 1.5rem;
+  padding: 16px;
 }
 
 .card .card-body h1.card-title,
@@ -4488,6 +4488,16 @@ textarea {
 
 .text-dribbble {
   color: #ea4c89 !important;
+}
+
+.text-grey {
+  color: #B3B3B3;
+  font-size: 12px;
+}
+
+.text-value {
+  color: #B3B3B3;
+  font-size: 10px;
 }
 
 .colorpicker.dropdown-menu {
@@ -4939,7 +4949,7 @@ a.btn[href="#previous"]:hover,
 .btn.btn-outline-primary {
   background: none;
   border-color: #E5131D;
-  color: #0074e6;
+  color: #B3B3B3;
   border-width: 1px;
 }
 
@@ -10000,7 +10010,7 @@ small {
 }
 
 .header .header-left {
-  width: 320px;
+  width: 175px;
   padding-left: 30px;
   display: -webkit-box;
   display: flex;
@@ -10565,7 +10575,7 @@ footer.content-footer .nav .header form .input-group .input-group-append button.
 .sidebar-group .sidebar .tab-content .tab-pane.active .tab-pane-body {
   -webkit-box-flex: 1;
           flex: 1;
-  overflow: auto;
+  overflow: auto;text
 }
 
 .sidebar-group .sidebar .tab-content .tab-pane.active .tab-pane-footer {
