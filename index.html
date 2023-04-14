@@ -25,7 +25,7 @@
     <!-- App styles -->
     <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
 </head>
-<body  class="dark horizontal-navigation">
+<body id="body" class="dark horizontal-navigation">
 
 <!-- begin::preloader-->
 <div class="preloader">
@@ -57,8 +57,9 @@
             </div>
             <div class="mb-4">
                 <h6>About</h6>
-                <p class="text-muted mb-0">I love reading, traveling and discovering new things. You need to be happy in
-                    life.</p>
+                <p class="text-muted mb-0">I'm the Telkomsel HRC Dashboard expert, and I'm kinda handy with all things geohash.
+
+                    I've worked with a lot of people in the past, but mostly I just stick to myself. But if you ever need any help with my talents, just let me know—I'll be happy to help out!</p>
             </div>
             <div class="mb-4">
                 <h6>Division</h6>
@@ -148,6 +149,14 @@
             </div>
             <div class="header-body-right">
                 <ul class="navbar-nav">
+
+                    <!-- begin::background mode -->
+                    <li class="nav-item dropdown">
+                        <a href="#" onclick="toggleDarkLight()" class="nav-link" title="dark/light mode">
+                            <i data-feather="sun"></i>
+                        </a>
+                    </li>
+                    <!-- end::background mode -->
 
                     <!-- begin::header fullscreen -->
                     <li class="nav-item dropdown">
@@ -1496,24 +1505,19 @@
 <!-- Plugin scripts -->
 <script src="vendors/bundle.js"></script>
 
-
-    <!-- Apex chart -->
-    <script src="https://apexcharts.com/samplesassets/irregular-data-series.js"></script>
-    <script src="vendors/charts/apex/apexcharts.min.js"></script>
-
     <!-- Daterangepicker -->
     <script src="vendors/datepicker/daterangepicker.js"></script>
 
     <!-- DataTable -->
     <script src="vendors/dataTable/datatables.min.js"></script>
 
-    <!-- Dashboard scripts -->
-    <script src="assets/js/examples/dashboard.js"></script>
-
-    <!-- Vamp -->
-    <script src="vendors/vmap/jquery.vmap.min.js"></script>
-    <script src="vendors/vmap/maps/jquery.vmap.usa.js"></script>
-    <script src="assets/js/examples/vmap.js"></script>
+    <script>
+        function toggleDarkLight() {
+        var body = document.getElementById("body");
+        var currentClass = body.className;
+        body.className = currentClass == "dark horizontal-navigation" ? "light horizontal-navigation" : "dark horizontal-navigation";
+        }
+    </script>
 
     <!-- To use theme colors with Javascript -->
     <div class="colors">
@@ -1530,9 +1534,6 @@
         <div class="bg-warning"></div>
         <div class="bg-warning-bright"></div>
     </div>
-
-    <script src="assets/js/examples/pages/ecommerce-dashboard.js"></script>
-
 
 <!-- App scripts -->
 <script src="assets/js/app.min.js"></script>
