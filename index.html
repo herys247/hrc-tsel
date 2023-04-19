@@ -363,17 +363,50 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="mb-3">
-                                <button type="button" class="btn btn-outline-primary">National</button>
-                                <button type="button" class="btn btn-outline-primary">Central Jabotabek</button>
-                                <button type="button" class="btn btn-outline-primary">Jakarta Selatan</button>
-                                <button type="button" class="btn btn-outline-primary">Setiabudi</button>
+                                <!-- Select Filter-->
+                                <div class="form-inline">
+                                    <div class="m-r-10">
+                                    <select class="form-control" id="selectRegion">
+                                        <option>Region 1</option>
+                                        <option>Region 2</option>
+                                        <option>Region 3</option>
+                                        <option>Region 4</option>
+                                        <option>Region 5</option>
+                                    </select>
+                                    </div>
+                                    <div class="m-r-10">
+                                    <select class="form-control" id="selectKabupaten">
+                                        <option>Kabupaten/Kota 1</option>
+                                        <option>Kabupaten/Kota 2</option>
+                                        <option>Kabupaten/Kota 3</option>
+                                        <option>Kabupaten/Kota 4</option>
+                                        <option>Kabupaten/Kota 5</option>
+                                    </select>
+                                    </div>
+                                    <div class="m-r-10">
+                                    <select class="form-control" id="selectKecamatann">
+                                        <option>Kecamatan 1</option>
+                                        <option>Kecamatan 2</option>
+                                        <option>Kecamatann 3</option>
+                                        <option>Kecamatan 4</option>
+                                        <option>Kecamatan 5</option>
+                                    </select>
+                                </div>
+                                </div>
                             </div>
                             <div>
                                 <img src="assets/media/image/map-example.jpg" style="width: 100%;">
                             </div>
-                            <div style="width: 300px; height: 220px; position: absolute; padding: 15px; background-color: #232538; border-color: #393B4C; border-radius: 10px; right: 30px; bottom: 30px;">
-                                <div class="mb-3">
-                                    <p class="text-muted">CONTRIBUTION</p>
+                            <div class="card-over-map">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <div>
+                                      <p class="text-muted">CONTRIBUTION</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" data-toggle="modal" data-target="#viewpopup">
+                                            <i class="maximize" data-feather="maximize"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div>
                                 <img src="assets/media/image/chart-contribution-01.png" style="width: 100%;">
@@ -382,6 +415,23 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- detail contribution popup -->
+                <div class="modal fade" id="viewpopup" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="viewpopup">CONTRIBUTION</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="ti-close"></i>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/media/image/chart-contribution-01.png" style="width: 100%;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
             </div>
 

@@ -4031,6 +4031,31 @@ textarea {
   box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
 }
 
+.card-over-map {
+  width: 300px;
+  height: 220px;
+  position: absolute;
+  padding: 15px;
+  background-color: #ffffff;
+  border-color: #393B4C;
+  border-radius: 8px;
+  right: 30px;
+  bottom: 30px;
+}
+
+body.dark .card-over-map {
+  width: 300px;
+  height: 220px;
+  position: absolute;
+  padding: 15px;
+  background-color: #232538;
+  border-color: #393B4C;
+  border-radius: 8px;
+  right: 30px;
+  bottom: 30px;
+}
+
+
 .card.bg-primary .card-header,
 .app-block .app-content .bg-primary.app-action .card-header,
 .bg-primary.chat-block .card-header,
@@ -7291,7 +7316,7 @@ body.modal-open .modal.show .modal-dialog {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  background-color: #ebebeb;
+  background-color: #ffffff;
   border-bottom: none;
 }
 
@@ -11594,7 +11619,7 @@ body.dark .modal-content {
 
 body.dark .modal-content .modal-header {
   border-bottom-color: rgba(240, 240, 240, 0.12);
-  background-color: #454c66 !important;
+  background-color: #232538 !important;
 }
 
 body.dark .modal-content .modal-header .close {
